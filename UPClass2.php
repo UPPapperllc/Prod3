@@ -1154,20 +1154,22 @@ $pid,
        // Generic all users functions;
        $menu = '';
       $menu .= '<ul>';
-       $menu .= '<li><a href="Prod_Cal.php" target="ProdCal">Production Calendar</a>';
-       $menu .= '<li><a href="getOrderStatus.php" target="OrdStat">Order Status Review</a>';
-       $menu .= '<li><a href="DailyProd.php" target="DailyRpt">Daily Production Review</a>';
-       $menu .= '<li><a href="FPMbyBW.php" target="FPM">Feet/Min Review</a>';
-       $menu .= '<li><a href="ActiveCustomers.php" target="ActiveCust">Active Customers</a>';
-       $menu .= '<li><a href="Toursheetlist.php" target="Toursheet">TourSheet</a>';
+       $menu .= '<li><a href="Prod_Cal.php" target="ProdCal">Production Calendar</a></li>';
+       $menu .= '<li><a href="getOrderStatus.php" target="OrdStat">Order Status Review</a></li>';
+       $menu .= '<li><a href="DailyProd.php" target="DailyRpt">Daily Production Review</a></li>';
+       $menu .= '<li><a href="FPMbyBW.php" target="FPM">Feet/Min Review</a></li>';
+       $menu .= '<li><a href="ActiveCustomers.php" target="ActiveCust">Active Customers</a></li>';
+       $menu .= '<li><a href="Toursheetlist.php" target="Toursheet">TourSheet</a></li>';
+       $menu .= '<li><a href="http://10.6.1.11/intranet/uppaper/Whhsinv/app.html?DB=PR" target="InvRev">Inventory Review</a></li>';
        
-       $menu .= '<li><a href="OrderUp.html" target="OrdDetail">Show Order Detail by Order Number</a>';
+       $menu .= '<li><a href="OrderUp.html" target="OrdDetail">Show Order Detail by Order Number</a></li>';
        $menu .= '</ul>';
+       if ($sl  >= 700){  // Supervisor level
        $menu .= '<hr>';
        $menu .= '<ul> Supervisor Level';
-       if ($sl  >= 700){  // Supervisor level
-           $menu .= '<li><a href="EmpShift.php" target="EmpShift">Shift Maintenance</a>';
-           $menu .= '<li><a href="aProdSched.php" target="ProdSched">Production Schedule Maintenace</a>';
+       
+           $menu .= '<li><a href="EmpShift.php" target="EmpShift">Shift Maintenance</a></li>';
+           $menu .= '<li><a href="aProdSched.php" target="ProdSched">Production Schedule Maintenace</a></li>';
        }
        $menu .= '</ul>';
        $menu .= '<hr>';
@@ -1177,12 +1179,16 @@ $pid,
            
        }
        $menu .= '</ul>';
+       if ($sl  >= 900){  // super user
        $menu .= '<hr>';
        $menu .= '<ul> System Admin Level';
-       if ($sl  >= 900){  // super user
-           $menu .= '<li><a href="http://10.6.1.11/Intranet/UpPaper/Prod_Load/app.html" target="EmpShift">ManualReload</a>';
-           $menu .= '<li><a href="http://10.6.1.11:2001/HTTPAdmin" target="EmpShift">HTTP Server Menu</a>';
-           http://10.6.1.11/Intranet/UpPaper/Prod_Load/app.html
+       
+           $menu .= '<li><a href="http://10.6.1.11/Intranet/UpPaper/Prod_Load/app.html" target="EmpShift">ManualReload</a></li>';
+           $menu .= '<li><a href="http://10.6.1.11:2001/HTTPAdmin" target="EmpShift">HTTP Server Menu</a></li>';
+           $menu .= '<li><a href="System_Check.php" target="SYSCheck">System Check</a></li>';
+           $menu .= '<li><a href="System_Check.php" target="http://10.6.1.11/Tablelist.php">Production System Table/view List</a></li>';
+           $menu .= '<li><a href="System_Check.php" target="http://10.6.1.11:10080/QSQL/App.html">Production System Quick Query</a></li>';
+           $menu .= '<li><a href="System_Check.php" target="http://colorschemedesigner.com/csd-3.5/">HTML Color Design Scheme</a></li>';
        }
        $menu .= '</ul>';    
        

@@ -768,7 +768,7 @@ if ($c1h == null) $c1y = 500;
 		    		    		    window.open("c3.php?OCC=30", "DP_3", "toolbar=no,scrollbars=yes,resizable=yes,top=" + $c3t + ",left=" + $c3l + "500,width=" + $c3w + ",height=" + $c3h);
 		    		    		    <?php }?>
 		    		    		    <?php 
-		    		    		    		if ($INVLIST == 'Y'){?> 
+		    		    		    if ($INVLIST == 'Y' and $sl >= 800){?> 
 		    		    		    $c4w = localStorage.getItem("c4w");
 		    		    		    $c4h = localStorage.getItem("c4h");
 		    		    		    if ($c4w == null) $c4w = 400;

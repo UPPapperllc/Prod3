@@ -40,7 +40,7 @@ window.resizeBy(-200,0);
 console.log('Width: ', viewportwidth );
 url = "UPMenu.php";
 
-var popUp = window.open(url,windowName, "width=500, height=400, left="+(viewportwidth-300)+",top=0");
+var popUp = window.open(url,windowName, "width=500, height=700, left="+(viewportwidth-300)+",top=0");
 if (popUp == null || typeof(popUp)=='undefined') { 	
 	alert('Please disable your pop-up blocker and click the "Open" link again.'); 
 } 

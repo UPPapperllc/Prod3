@@ -1,4 +1,4 @@
-g<?php 
+<?php 
 require '../uphead.php';
 require "UPClass2.php";
 $x = UPClass2::getUserData($con);
@@ -42,7 +42,7 @@ $cust = $_GET['CUST'];
 		min-width: 520px;
 	}
 	.column {
-		width: 800px;
+		width: 700px;
 		float: left;
 		padding-bottom: 100px;
 		border: 1px solid black;
@@ -187,7 +187,12 @@ a:active {
 		$('#openOrders').jtable({
 			
 			title: 'Open Orders',
-            columnResizable: true,
+			 paging: true,
+	            pageSize: 15,
+	            sorting: true,
+	            defaultSorting: 'MILORD ASC',
+	            selecting: true,
+	            columnResizable: true,
           //  multiselect: true, //Allow multiple selecting
            // selectingCheckboxes: true, //Show checkboxes on first column
            // selectOnRowClick: false, //Enable this to only select using checkboxes
@@ -559,7 +564,7 @@ a:active {
 		
 
 </div>
-<div class="column">
+
 <div  class="portlet">
 		<div class="portlet-header">Transportation Time</div>
    <div class="portlet-content"  id="TranTime" style="width: 90%;" ></div>
