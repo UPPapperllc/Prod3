@@ -1153,7 +1153,7 @@ $pid,
       // var_dump($sl, $x);
        // Generic all users functions;
        $menu = '';
-       if ($sl == 500) { 
+      $menu .= '<ul>';
        $menu .= '<li><a href="Prod_Cal.php" target="ProdCal">Production Calendar</a>';
        $menu .= '<li><a href="getOrderStatus.php" target="OrdStat">Order Status Review</a>';
        $menu .= '<li><a href="DailyProd.php" target="DailyRpt">Daily Production Review</a>';
@@ -1162,17 +1162,24 @@ $pid,
        $menu .= '<li><a href="Toursheetlist.php" target="Toursheet">TourSheet</a>';
        
        $menu .= '<li><a href="OrderUp.html" target="OrdDetail">Show Order Detail by Order Number</a>';
-       }
-       
-       if ($sl  == 700){  // Supervisor level
+       $menu .= '</ul>';
+       $menu .= '<hr>';
+       $menu .= '<ul> Supervisor Level';
+       if ($sl  >= 700){  // Supervisor level
            $menu .= '<li><a href="EmpShift.php" target="EmpShift">Shift Maintenance</a>';
-           $menu .= '<ul><li><a href="aProdSched.php" target="ProdSched">Production Schedule Maintenace</a>';
+           $menu .= '<li><a href="aProdSched.php" target="ProdSched">Production Schedule Maintenace</a>';
        }
-       if ($sl  ==  800){  // managers level
+       $menu .= '</ul>';
+       $menu .= '<hr>';
+       $menu .= '<ul>';
+       
+       if ($sl  >=  800){  // managers level
            
        }
-       
-       if ($sl  == 900){  // super user
+       $menu .= '</ul>';
+       $menu .= '<hr>';
+       $menu .= '<ul> System Admin Level';
+       if ($sl  >= 900){  // super user
            $menu .= '<li><a href="http://10.6.1.11/Intranet/UpPaper/Prod_Load/app.html" target="EmpShift">ManualReload</a>';
            $menu .= '<li><a href="http://10.6.1.11:2001/HTTPAdmin" target="EmpShift">HTTP Server Menu</a>';
            http://10.6.1.11/Intranet/UpPaper/Prod_Load/app.html

@@ -11,6 +11,8 @@ require_once '../uphead.php';
 require "UPClass2.php";
 date_default_timezone_set('US/Eastern');
 $user = strtoupper(trim($_SERVER['PHP_AUTH_USER']));
+$x = UPClass2::getUserData($con);
+$sl = $x['SL'];
 
 
 // Generic all users functions;
@@ -45,6 +47,12 @@ a:active {
     color: yellow;
 }
 
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	height: 20px;
+}
 
 </style>
  
@@ -69,26 +77,25 @@ a:active {
 	 window.close();
  }
 
+
+
  </script>
 </head>
 <body>
-<h5><title>Production Review and Reporting Menu</title></h5>
+<h3>Production Review and Reporting Menu</h3>
 
   
     <?php  echo $menu;?>
- 
+ <br>
  <button onclick="closeWin()"> Sign-off</button>
+<div id='footer'>
+<?php 
+echo "Signed in as: $user ($sl)";
+
+
+?>
+</div>
 
 </body>
 </html>
 
-<!-- 
-
-<upmenu class="floating-menu">
- <div class="dropdown">
-  <button class="dropbtn">UP Functions</button>
-  <div class="dropdown-content">
-   </div>
-</div>
- </upmenu>
- -->
