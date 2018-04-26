@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<categories>
+	<cat>
+		<Value>Sched</Value>
+		<DisplayText>Downtime/Scheduled</DisplayText>
+	</cat>
+	<cat>
+		<Value>PrcInter</Value>
+		<DisplayText>Inertuption</DisplayText>
+	</cat>
+	<cat>
+		<Value>UnSched</Value>
+		<DisplayText>DownTime/Unscheduled</DisplayText>
+	</cat>
+	<cat>
+		<Value>Process</Value>
+		<DisplayText>Automated good prcs</DisplayText>
+	</cat>
+	<cat>
+		<Value>GRDCHG</Value>
+		<DisplayText>Mid reel GradeChange</DisplayText>
+	</cat>
+	<cat>
+		<Value>Comment</Value>
+		<DisplayText>Comment</DisplayText>
+	</cat>
+	<cat>
+		<Value>Reel Drop</Value>
+		<DisplayText>End of Reel </DisplayText>
+	</cat>
+	<cat>
+		<Value>BadData</Value>
+		<DisplayText>Missing Data from Prod Rec </DisplayText>
+	</cat>
+</categories>
+

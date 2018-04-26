@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codes>
+	<code>
+		<Value>70</Value>
+		<DisplayText>Downtime/Scheduled</DisplayText>
+	</code>
+	<code>
+		<Value>75</Value>
+		<DisplayText>Process Interuption</DisplayText>
+	</code>
+	<code>
+		<Value>80</Value>
+		<DisplayText>DownTime/Unscheduled</DisplayText>
+	</code>
+	<code>
+		<Value>1</Value>
+		<DisplayText>Auto added Prod Stat</DisplayText>
+	</code>
+	<code>
+		<Value>90</Value>
+		<DisplayText>Mid reel GradeChange</DisplayText>
+	</code>
+	<code>
+		<Value>40</Value>
+		<DisplayText>Comment</DisplayText>
+	</code>
+	<code>
+		<Value>1</Value>
+		<DisplayText>End of Reel </DisplayText>
+	</code>
+		<code>
+		<Value>22</Value>
+		<DisplayText>Missing Data from Prod Rec  </DisplayText>
+	</code>
+</codes>
+

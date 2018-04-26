@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+ <link rel="stylesheet" href="Prod3.css">
+<title>Show order detail</title>
+
+<script>
+function showOrder(){
+	ord = document.getElementById("ord");
+	shp = document.getElementById("shp");
+	url = 'OrderDetail.php?O=' + ord.value + '&S=' + shp.value;
+	window.open(url, "_blank");
+	//window.close();
+}
+
+</script>
+</head>
+<body>
+<label>Order Number:</label> 
+<input type='text' maxlength=6 id='ord' title='Enter your order number'></input><br>
+<label>Shipment Number:</label> <Input type='number' min = 1 max = 99 id = 'shp' title='Enter a shipment number'></input><br>
+<input type='button' onClick = 'showOrder()' value="Show Order Detail"></input>
+</body>
+</html>

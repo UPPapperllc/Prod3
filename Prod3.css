@@ -1,0 +1,153 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: black;
+	color: azure;
+	background-repeat: no-repeat;
+	 background: linear-gradient(black,midnightblue) fixed; /* Standard syntax (must be last) */
+	
+}
+
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+
+
+th {
+	background-color: black;
+	color: azure;
+	 background: linear-gradient(blackk,midnightblue); /* Standard syntax (must be last) */
+	
+}
+
+. UPwarning{
+	color: black;
+	background-color: yellow !important;
+}
+. warning{
+	color: black;
+	background-color: yellow !important;
+}
+.UPsuccess{
+	color:white;
+	background-color: darkgreen !important;
+}
+.UPxarning{
+	color:white;
+	background-color: darkred !important;
+}
+
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) 
+    .row.content {height: 450px}*/
+    
+    /* Set gray background color and 100% height
+    .sidenav {
+      padding: 5px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }  */
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    
+  .floating-menu {
+    font-family: sans-serif;
+    background: midnightblue;
+  	color: white
+    padding: 5px;;
+    width: 200px;
+    z-index: 100;
+    position: fixed;
+  	 top: 0px;
+    right: 0px;
+  }
+// .floating-menu a, 
+//  .floating-menu h3 {
+ //   font-size: 0.9em;
+ //   display: block;
+ //   margin: 0 0.5em;
+ //   color: white;
+ // }
+  
+  
+.dropbtn {
+    background-color: midnightblue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	width:200px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: midnightblue;
+}
+
